@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>FVCKSIMILE Media Kit</title>
+<meta name="description" content="Media kit di FVCKSIMILE: numeri social, pubblico, video più visti e prodotti usati in bottega.">
+<meta property="og:title" content="FVCKSIMILE Media Kit">
+<meta property="og:description" content="Numeri social, pubblico e video più visti di FVCKSIMILE, aggiornati ogni settimana.">
+<meta property="og:image" content="https://mediakit.fvcksimile.com/logo.png">
+<style>:root{color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700;800&family=JetBrains+Mono:wght@500;700&family=Permanent+Marker&display=swap">
+<style>
+/* Layout: insegna da bottega. Un'unica colonna larga, numeri come cartelli, blocchi separati da righe spesse d'inchiostro. Look scuro unico, voluto. */
+:root{
+  --ink:#050506;
+  --panel:#151518;
+  --line:#2a2a30;
+  --paper:#f3f1ec;
+  --muted:#a9a7b0;
+  --hot:#1fb6ff;
+  --volt:#ffee00;
+  --f-display:"Anton","Impact","Arial Narrow",sans-serif;
+  --f-body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-data:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --f-hand:"Permanent Marker","Comic Sans MS",cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--ink);color:var(--paper);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--volt);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:56px;border-top:6px solid var(--paper)}
+h1,h2,h3{text-wrap:balance;margin:0}
+h2{font-family:var(--f-display);font-weight:400;font-size:clamp(34px,6vw,56px);line-height:1;letter-spacing:.5px;text-transform:uppercase}
+.kicker{font-family:var(--f-data);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;margin-bottom:28px}
+.num{font-variant-numeric:tabular-nums}
+
+/* hero */
+.hero{padding-block:40px 48px}
+.topbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-bottom:40px}
+.stamp{font-family:var(--f-data);font-size:12px;letter-spacing:2px;text-transform:uppercase;border:2px solid var(--paper);padding:6px 10px}
+.stamp b{color:var(--volt)}
+.logo{position:relative;display:block;width:fit-content;margin:0 auto;max-width:min(340px,80%)}
+.logo img{display:block;width:100%;height:auto;background:transparent}
+.mark{position:absolute;top:2%;right:-22px;font-family:var(--f-data);font-size:clamp(14px,2vw,18px);font-weight:700;color:var(--volt)}
+.wordmark{font-family:var(--f-display);font-weight:400;font-size:clamp(64px,15vw,184px);line-height:.86;letter-spacing:1px;margin:0;color:var(--paper);text-shadow:6px 6px 0 var(--hot)}
+.tag{font-family:var(--f-hand);font-size:clamp(22px,3.4vw,34px);color:var(--volt);transform:rotate(-2deg);display:block;text-align:center;margin-top:14px}
+.intro{max-width:62ch;font-size:18px;color:#d9d7d2;margin-top:18px}
+.handles{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.handle{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;border:2px solid var(--paper);padding:10px 14px;min-height:44px;transition:background .15s,color .15s}
+.handle span{font-family:var(--f-data);font-size:11px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+.handle:hover{background:var(--paper);color:var(--ink)}
+.handle:hover span{color:var(--ink)}
+
+/* big numbers */
+.bigs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.big{background:var(--panel);border:3px solid var(--paper);padding:20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.big.lead{background:var(--hot);border-color:var(--hot);color:var(--ink);box-shadow:8px 8px 0 var(--volt)}
+.big .v{font-family:var(--f-display);font-size:clamp(44px,6vw,72px);line-height:.95}
+.big .l{font-family:var(--f-data);font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.big:not(.lead) .l{color:var(--muted)}
+.big .s{font-size:14px;line-height:1.4}
+.big:not(.lead) .s{color:#cfcdc8}
+.note{margin-top:20px;max-width:70ch;color:#d9d7d2}
+.note b{color:var(--volt)}
+
+/* platforms */
+.plats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.plat{border:2px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.plat h3{font-family:var(--f-display);font-weight:400;font-size:30px;text-transform:uppercase;letter-spacing:.5px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.plat h3 a{font-family:var(--f-data);font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:none}
+.plat h3 a:hover{color:var(--volt)}
+.rows{display:flex;flex-direction:column}
+.row{display:flex;justify-content:space-between;gap:12px;padding-block:9px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row dt{color:var(--muted);font-size:14px}
+.row dd{margin:0;font-family:var(--f-data);font-weight:700;font-variant-numeric:tabular-nums}
+.period{font-family:var(--f-data);font-size:11px;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+
+/* audience */
+.aud{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.aud h3{font-family:var(--f-data);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;font-weight:500}
+.bar{display:grid;grid-template-columns:76px minmax(0,1fr) 52px;align-items:center;gap:10px;margin-bottom:10px;font-size:14px}
+.bar .track{height:14px;background:var(--panel);border:1px solid var(--line)}
+.bar .fill{height:100%;background:var(--paper)}
+.bar .fill.hot{background:var(--hot)}
+.bar .pct{font-family:var(--f-data);font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.alsowatch{margin-top:32px;padding:20px;border:2px dashed var(--volt);display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline}
+.alsowatch strong{font-family:var(--f-hand);color:var(--volt);font-weight:400;font-size:20px}
+.chip{font-family:var(--f-data);font-size:13px;border:1px solid var(--paper);padding:4px 10px}
+
+/* videos */
+.vids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.vid{display:flex;flex-direction:column;justify-content:space-between;gap:18px;padding:22px;text-decoration:none;background:var(--panel);border:3px solid var(--paper);min-height:220px;transition:transform .15s,box-shadow .15s;min-width:0}
+.vid:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--hot)}
+.vid .views{font-family:var(--f-display);font-size:clamp(48px,6vw,68px);line-height:.9;color:var(--volt)}
+.vid .views small{font-family:var(--f-data);font-size:12px;letter-spacing:1.5px;color:var(--muted);display:block;margin-top:6px}
+.vid .t{font-weight:700;font-size:17px;line-height:1.35}
+.vid .go{font-family:var(--f-data);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.vid:hover .go{color:var(--paper)}
+
+/* collabs */
+.collabs{display:flex;flex-direction:column}
+.collab{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr) auto;gap:16px 24px;align-items:center;padding-block:20px;border-bottom:2px solid var(--line)}
+.collab:first-child{border-top:2px solid var(--line)}
+.collab .b{font-family:var(--f-display);font-size:34px;text-transform:uppercase;line-height:1}
+.collab .d{color:#d9d7d2}
+.links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.lnk{font-family:var(--f-data);font-size:13px;font-weight:700;text-decoration:none;border:2px solid var(--paper);padding:8px 12px;min-height:40px;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.lnk:hover{background:var(--paper);color:var(--ink)}
+
+/* offer */
+.offer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.off{border-left:6px solid var(--hot);padding:6px 0 6px 18px}
+.off h3{font-family:var(--f-display);font-weight:400;font-size:28px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.off p{margin:0;color:#d9d7d2;max-width:52ch}
+
+/* contact */
+.contact{background:var(--hot);color:var(--ink);border-top:0}
+.contact h2{font-size:clamp(44px,9vw,104px)}
+.contact p{font-size:18px;max-width:56ch;font-weight:500}
+.contact .handles .handle{border-color:var(--ink)}
+.contact .handles .handle span{color:var(--ink)}
+.contact .handles .handle:hover{background:var(--ink);color:var(--hot)}
+.contact .handles .handle:hover span{color:var(--hot)}
+footer{padding-block:24px;font-family:var(--f-data);font-size:12px;color:var(--muted);letter-spacing:1px}
+
+@media (max-width:860px){
+  .bigs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .plats,.vids,.aud{grid-template-columns:minmax(0,1fr)}
+  .offer{grid-template-columns:minmax(0,1fr)}
+  .collab{grid-template-columns:minmax(0,1fr)}
+  .links{justify-content:flex-start}
+}
+.norev{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:start}
+.big-quote{font-family:var(--f-display);font-size:clamp(30px,4.4vw,48px);line-height:1.05;text-transform:uppercase;margin:0;color:var(--volt)}
+.norev-side p{margin:0 0 14px;color:#d9d7d2;max-width:56ch}
+.proof{border:2px solid var(--hot);padding:14px 16px}
+.proof b{color:var(--hot)}
+.contacts{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.ct{display:flex;align-items:center;gap:12px;border:3px solid var(--ink);padding:10px 12px 10px 16px;min-width:0}
+.ct .k{font-family:var(--f-data);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.ct .val{font-weight:800;font-size:clamp(18px,3vw,24px);user-select:all;overflow-wrap:anywhere}
+.ct button{font-family:var(--f-data);font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase;background:var(--ink);color:var(--hot);border:0;padding:10px 12px;min-height:44px;cursor:pointer}
+@media (max-width:860px){.norev{grid-template-columns:minmax(0,1fr)}}
+.topright{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.lang{display:flex;border:2px solid var(--paper)}
+.lang button{font-family:var(--f-data);font-weight:700;font-size:13px;letter-spacing:1.5px;background:transparent;color:var(--paper);border:0;min-width:48px;min-height:40px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--volt);color:var(--ink)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script src="data.js"></script>
+</head>
+<body>
+<header class="hero wrap">
+  <div class="topbar">
+    <div class="stamp"><span data-t>Media kit · dati aggiornati al</span> <b id="updated"></b></div>
+    <div class="topright"><div class="stamp" data-t>Cuneo · Italia</div><div class="lang" role="group" aria-label="Lingua / Language"><button type="button" id="langIt" data-lang="it">IT</button><button type="button" id="langEn" data-lang="en">EN</button></div></div>
+  </div>
+  <h1 class="logo"><img src="logo.png" alt="FVCKSIMILE" width="520" height="379"><sup class="mark" aria-label="marchio">™</sup></h1>
+  <div class="tag" data-t>Arte irriverente</div>
+  <p class="intro" data-t>Sono Giovanni Marchetti. In bottega faccio insegne, lettering, loghi e prototipi con stampa 3D, laser, UV e termoformatura. Sui social racconto ogni lavoro dal pezzo grezzo al risultato finito: un video nuovo quasi ogni giorno, oltre 400 Reel pubblicati, zero follower comprati e zero post sponsorizzati.</p>
+  <nav class="handles" id="handles" aria-label="Profili social"></nav>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t>In numeri</h2><span class="kicker" data-t>Ultimi 30 giorni, salvo dove indicato</span></div>
+    <div class="bigs" id="bigs"></div>
+    <p class="note" id="bigsNote"></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t>Canale per canale</h2></div>
+    <div class="plats" id="plats"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t>Chi mi guarda</h2><span class="kicker" id="audSrc"></span></div>
+    <div class="aud" id="aud"></div>
+    <div class="alsowatch" id="also"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t>I video più visti</h2><span class="kicker" data-t>Tocca per guardarli</span></div>
+    <div class="vids" id="vids"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t>Non faccio recensioni</h2></div>
+    <div class="norev">
+      <p class="big-quote" data-t>Le recensioni le fanno in centinaia, e io non ci credo. Nei miei video uso i prodotti per lavorare davvero.</p>
+      <div class="norev-side">
+        <p data-t>Mostro la macchina o l'oggetto mentre produce un pezzo vero, con i suoi limiti e i suoi punti forti. Chi guarda capisce cosa può farci, non legge una scheda tecnica.</p>
+        <p class="proof" data-t><b>Un esempio:</b> con la stampante UV di eufyMake ho fatto decine di video di lavoro reale, e molte persone mi hanno scritto per chiedermi dove comprarla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t>Prodotti che uso davvero</h2><span class="kicker" data-t>Comprati da me, usati in bottega ogni giorno</span></div>
+    <div class="collabs" id="collabs"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t>Cosa posso fare per un brand</h2></div>
+    <div class="offer">
+      <div class="off"><h3 data-t>Il vostro prodotto, trasformato</h3><p data-t>Personalizzo il prodotto in bottega con laser, stampa UV o 3D, e il video racconta tutto il processo. Prima faccio i test sui campioni del materiale.</p></div>
+      <div class="off"><h3 data-t>Reel e TikTok</h3><p data-t>Video verticali nel mio stile, pubblicati su Instagram, TikTok e YouTube Shorts.</p></div>
+      <div class="off"><h3 data-t>Contenuti per le vostre ads</h3><p data-t>Video girati in bottega e consegnati a voi senza pubblicazione, da usare nelle vostre campagne.</p></div>
+      <div class="off"><h3 data-t>Codice sconto dedicato</h3><p data-t>Un codice personale nei video e in bio, così misurate esattamente quante vendite arrivano dal mio pubblico.</p></div>
+      <div class="off"><h3 data-t>Pezzi su misura</h3><p data-t>Oggetti unici legati al vostro brand: per un giveaway, un evento o una vetrina.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2 data-t>Lavoriamo insieme</h2>
+    <p data-t>Scrivimi o chiamami. Rispondo io, non un'agenzia.</p>
+    <div class="contacts">
+      <div class="ct"><div><div class="k">Email</div><div class="val" id="mail">f@cksimile.it</div></div><button type="button" id="cpMail" data-copy="f@cksimile.it" data-t>Copia</button></div>
+      <div class="ct"><div><div class="k" data-t>Telefono e WhatsApp</div><div class="val" id="tel">+39 393 283 8864</div></div><button type="button" id="cpTel" data-copy="+393932838864" data-t>Copia</button></div>
+    </div>
+    <nav class="handles" id="handles2" aria-label="Profili social"></nav>
+  </div>
+</section>
+
+<footer class="wrap" data-t>FVCKSIMILE · Cuneo · Dati da Instagram Insights, TikTok Studio e YouTube</footer>
+
+<script>
+const DATA = window.DATA;
+
+const UI = {
+  it:{also:"Il mio pubblico segue anche", alsoSub:"Creator tech, unboxing di smartphone e accessori", viewsOn:"Visualizzazioni", watch:"Guarda il video ↗", copied:"Copiato"},
+  en:{also:"My audience also follows", alsoSub:"Tech creators, smartphone and accessory unboxings", viewsOn:"Views", watch:"Watch the video ↗", copied:"Copied"}
+};
+const STATIC_EN = {"Cuneo · Italia": "Cuneo · Italy", "Arte irriverente": "Irreverent art", "Sono Giovanni Marchetti. In bottega faccio insegne, lettering, loghi e prototipi con stampa 3D, laser, UV e termoformatura. Sui social racconto ogni lavoro dal pezzo grezzo al risultato finito: un video nuovo quasi ogni giorno, oltre 400 Reel pubblicati, zero follower comprati e zero post sponsorizzati.": "I'm Giovanni Marchetti. In my workshop I make signs, lettering, logos and prototypes with 3D printing, laser, UV printing and vacuum forming. On social media I show every job from raw material to finished piece: a new video almost every day, over 400 Reels published, zero bought followers and zero sponsored posts.", "In numeri": "By the numbers", "Ultimi 30 giorni, salvo dove indicato": "Last 30 days unless noted", "Canale per canale": "Channel by channel", "Chi mi guarda": "Who watches me", "I video più visti": "Most viewed videos", "Tocca per guardarli": "Tap to watch", "Non faccio recensioni": "I don't do reviews", "Le recensioni le fanno in centinaia, e io non ci credo. Nei miei video uso i prodotti per lavorare davvero.": "Hundreds of people do reviews, and I don't believe in them. In my videos I use products for real work.", "Mostro la macchina o l'oggetto mentre produce un pezzo vero, con i suoi limiti e i suoi punti forti. Chi guarda capisce cosa può farci, non legge una scheda tecnica.": "I show the machine or the object while it makes a real piece, with its limits and its strengths. Viewers see what they can do with it instead of reading a spec sheet.", "<b>Un esempio:</b> con la stampante UV di eufyMake ho fatto decine di video di lavoro reale, e molte persone mi hanno scritto per chiedermi dove comprarla.": "<b>One example:</b> I made dozens of real-work videos with the eufyMake UV printer, and many people wrote to ask me where to buy it.", "Prodotti che uso davvero": "Products I actually use", "Comprati da me, usati in bottega ogni giorno": "Bought by me, used in my workshop every day", "Cosa posso fare per un brand": "What I can do for a brand", "Il vostro prodotto, trasformato": "Your product, transformed", "Personalizzo il prodotto in bottega con laser, stampa UV o 3D, e il video racconta tutto il processo. Prima faccio i test sui campioni del materiale.": "I customize your product in my workshop with laser, UV or 3D printing, and the video shows the whole process. I test on material samples first.", "Reel e TikTok": "Reels and TikToks", "Video verticali nel mio stile, pubblicati su Instagram, TikTok e YouTube Shorts.": "Vertical videos in my style, published on Instagram, TikTok and YouTube Shorts.", "Contenuti per le vostre ads": "Content for your ads", "Video girati in bottega e consegnati a voi senza pubblicazione, da usare nelle vostre campagne.": "Videos shot in my workshop and delivered to you unpublished, ready for your campaigns.", "Codice sconto dedicato": "Dedicated discount code", "Un codice personale nei video e in bio, così misurate esattamente quante vendite arrivano dal mio pubblico.": "A personal code in my videos and bio, so you can measure exactly how many sales come from my audience.", "Pezzi su misura": "Custom pieces", "Oggetti unici legati al vostro brand: per un giveaway, un evento o una vetrina.": "One-off objects tied to your brand: for a giveaway, an event or a shop window.", "Lavoriamo insieme": "Let's work together", "Scrivimi o chiamami. Rispondo io, non un'agenzia.": "Write or call me. I answer myself, not an agency.", "Telefono e WhatsApp": "Phone and WhatsApp", "Copia": "Copy", "FVCKSIMILE · Cuneo · Dati da Instagram Insights, TikTok Studio e YouTube": "FVCKSIMILE · Cuneo · Data from Instagram Insights, TikTok Studio and YouTube", "Media kit · dati aggiornati al": "Media kit · data updated"};
+
+let LANG='it';
+const T=s=>LANG==='en'&&DATA.en[s]!=null?DATA.en[s]:s;
+const el=(t,c,h)=>{const e=document.createElement(t); if(c) e.className=c; if(h!=null) e.innerHTML=h; return e;};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmtPct=n=>{let t=(Number.isInteger(n)?n:n.toFixed(1)).toString(); return (LANG==='it'?t.replace('.',','):t)+'%';};
+const fmtV=v=>LANG==='en'?String(v).replace(/(\d)\.(\d{3})/g,'$1,$2').replace(/(\d),(\d)(?=[KM%])/g,'$1.$2'):v;
+const box=id=>{const e=document.getElementById(id); e.replaceChildren(); return e;};
+
+function render(){
+  document.documentElement.lang=LANG;
+  document.querySelectorAll('[data-t]').forEach(e=>{
+    if(e.dataset.it==null) e.dataset.it=e.innerHTML;
+    e.innerHTML = LANG==='en' && STATIC_EN[e.dataset.it] ? STATIC_EN[e.dataset.it] : e.dataset.it;
+  });
+  document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===LANG)));
+  document.getElementById('updated').textContent=DATA.updated[LANG]||DATA.updated.it;
+
+  for(const id of ['handles','handles2']){
+    const nav=box(id);
+    DATA.handles.forEach(h=>{const a=el('a','handle',`${esc(h.handle)} <span>${esc(h.label)}</span>`); a.href=h.url; a.target="_blank"; a.rel="noopener"; nav.appendChild(a);});
+  }
+  const bigs=box('bigs');
+  DATA.bigs.forEach(b=>bigs.appendChild(el('div','big'+(b.lead?' lead':''),`<div class="v num">${esc(fmtV(b.v))}</div><div class="l">${esc(T(b.l))}</div><div class="s">${esc(T(b.s))}</div>`)));
+  document.getElementById('bigsNote').innerHTML=T(DATA.bigsNote);
+
+  const plats=box('plats');
+  DATA.platforms.forEach(p=>{
+    const c=el('div','plat');
+    c.appendChild(el('h3',null,`${esc(p.name)} <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.handle)} ↗</a>`));
+    c.appendChild(el('div','period',esc(T(p.period))));
+    const dl=el('dl','rows'); dl.style.margin='0';
+    p.rows.forEach(([k,v])=>dl.appendChild(el('div','row',`<dt>${esc(T(k))}</dt><dd>${esc(fmtV(v))}</dd>`)));
+    c.appendChild(dl); plats.appendChild(c);
+  });
+
+  document.getElementById('audSrc').textContent=T(DATA.audienceSource);
+  const aud=box('aud');
+  DATA.audience.forEach(g=>{
+    const c=el('div'); c.appendChild(el('h3',null,esc(T(g.title))));
+    const max=Math.max(...g.items.map(i=>i[1]));
+    g.items.forEach(([k,v])=>{
+      const hot=(g.hot||[]).includes(k)||(!g.hot&&v===max);
+      c.appendChild(el('div','bar',`<span>${esc(T(k))}</span><span class="track"><span class="fill${hot?' hot':''}" style="display:block;width:${(v/max*100).toFixed(1)}%"></span></span><span class="pct">${fmtPct(v)}</span>`));
+    });
+    aud.appendChild(c);
+  });
+  const also=box('also');
+  also.appendChild(el('strong',null,UI[LANG].also));
+  DATA.alsoWatch.forEach(n=>also.appendChild(el('span','chip',esc(n))));
+  also.appendChild(el('span','kicker',UI[LANG].alsoSub));
+
+  const vids=box('vids');
+  DATA.topVideos.forEach(v=>{
+    const a=el('a','vid',`<div class="views num">${esc(fmtV(v.views))}<small>${UI[LANG].viewsOn} · ${esc(v.platform)}</small></div><div class="t">${esc(T(v.title))}</div><div class="go">${UI[LANG].watch}</div>`);
+    a.href=v.url; a.target="_blank"; a.rel="noopener"; vids.appendChild(a);
+  });
+
+  const collabs=box('collabs');
+  DATA.collabs.forEach(c=>{
+    const r=el('div','collab'); r.appendChild(el('div','b',esc(c.brand))); r.appendChild(el('div','d',esc(T(c.desc))));
+    const l=el('div','links'); c.links.forEach(([t,u])=>{const a=el('a','lnk',`${esc(T(t))} ↗`); a.href=u; a.target="_blank"; a.rel="noopener"; l.appendChild(a);});
+    r.appendChild(l); collabs.appendChild(r);
+  });
+}
+
+function setLang(l){
+  LANG=l==='en'?'en':'it';
+  try{localStorage.setItem('fvck-lang',LANG)}catch(e){}
+  try{history.replaceState(null,'',LANG==='en'?'#en':location.pathname+location.search)}catch(e){}
+  render();
+}
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+window.addEventListener('hashchange',()=>{if(location.hash==='#en'&&LANG!=='en')setLang('en'); else if(location.hash==='#it'&&LANG!=='it')setLang('it');});
+
+(function init(){
+  let l='it';
+  if(location.hash==='#en') l='en';
+  else if(location.hash==='#it') l='it';
+  else { try{ l=localStorage.getItem('fvck-lang')||'it' }catch(e){} }
+  LANG=l; render();
+})();
+
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
+  const v=b.dataset.copy;
+  const done=()=>{b.textContent=UI[LANG].copied;setTimeout(()=>{b.textContent=LANG==='en'?'Copy':'Copia'},1600)};
+  try{navigator.clipboard.writeText(v).then(done,()=>sel(b))}catch(e){sel(b)}
+}));
+function sel(b){const n=b.previousElementSibling.querySelector('.val');const r=document.createRange();r.selectNodeContents(n);const g=getSelection();g.removeAllRanges();g.addRange(r);}
+</script>
+</body>
+</html>
